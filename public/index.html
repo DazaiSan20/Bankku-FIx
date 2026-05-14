@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bankku - Dashboard</title>
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,600,700,800" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#2D60FF"/>
+            <rect x="7" y="10" width="18" height="12" rx="2.5" fill="white" opacity="0.9"/>
+            <rect x="7" y="14" width="18" height="3" fill="#2D60FF" opacity="0.3"/>
+            <rect x="10" y="18" width="5" height="2" rx="1" fill="white" opacity="0.7"/>
+          </svg>
+        </span>
+        <span class="logo-text">Bankku.</span>
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-link active">
+        <svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 20 20" fill="currentColor" stroke="none"><g clip-path="url(#clip_tx)"><path d="M4.16667 18.3334C4.1672 18.7753 4.34296 19.1989 4.65541 19.5113C4.96785 19.8238 5.39147 19.9996 5.83334 20.0001H14.1667C14.6085 19.9996 15.0322 19.8238 15.3446 19.5113C15.6571 19.1989 15.8328 18.7753 15.8333 18.3334V17.6042H4.16667V18.3334Z"/><path d="M15.8333 1.66667C15.8328 1.2248 15.6571 0.801181 15.3446 0.488734C15.0322 0.176287 14.6085 0.000523784 14.1667 0L5.83334 0C5.39147 0.000523784 4.96785 0.176287 4.65541 0.488734C4.34296 0.801181 4.1672 1.2248 4.16667 1.66667V2.5H15.8333V1.66667Z"/><path d="M19.7678 5.36052L17.2678 2.75635L16.0655 3.91051L17.1115 5.0001H15.8333V6.66677H17.2014L16.0901 7.73177L17.2432 8.9351L19.7432 6.53927C19.9975 6.06445 19.9998 5.95498C20.0021 5.84551 19.9828 5.73667 19.943 5.63467C19.9032 5.53266 19.8436 5.4395 19.7678 5.36052Z"/><path d="M13.3333 4.99992H15.8333V3.33325H4.16667V13.3333H6.66667V14.9999H4.16667V16.6666H15.8333V6.66659H13.3333V4.99992ZM12.5 8.33325H9.58334C9.21057 8.53343 9.16667 8.63941 9.16667 8.74992C9.16667 8.86043 9.21057 8.96641 9.28871 9.04455C9.36685 9.12269 9.47283 9.16659 9.58334 9.16659H10.4167C10.9333 9.16607 11.4317 9.35754 11.8151 9.70383C12.1986 10.0501 12.4396 10.5265 12.4916 11.0405C12.5435 11.5546 12.4025 12.0696 12.0961 12.4855C11.7897 12.9015 11.3397 13.1888 10.8333 13.2916V14.1666H9.16667V13.3333H7.50001V11.6666H10.4167C10.7894 11.4664 10.8333 11.3604 10.8333 11.2499C10.8333 11.1394 10.7894 11.0334 10.7113 10.9553C10.6332 10.8772 10.5272 10.8333 10.4167 10.8333H9.58334C9.06669 10.8338 8.56828 10.6423 8.18487 10.296C7.80145 9.94973 7.56038 9.47332 7.50846 8.95929C7.45654 8.44526 7.59746 7.93027 7.90389 7.51431C8.21031 7.09834 8.66036 6.81106 9.16667 6.70825V5.83325H10.8333V6.66659H12.5V8.33325Z"/><path d="M2.79865 13.3333L3.9099 12.2683L2.75677 11.0649L0.256772 13.4608C0.0172375 14.2634 0.057042 14.3654C0.0968466 14.4674 0.156363 14.5605 0.232188 14.6395L2.73219 17.2437L3.93448 16.0895L2.88854 14.9999H4.16667V13.3333H2.79865Z"/></g><defs><clipPath id="clip_tx"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>
+        <span>Transactions</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        <span>Accounts</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 20 20" style="fill:currentColor;stroke:none"><g clip-path="url(#ci1)"><path d="M3.1366 8.18H0.909C0.407 8.18 0 8.589 0 9.091V19.091C0 19.593 0.407 20 0.909 20H3.1366C3.639 20 4.046 19.593 4.046 19.091V9.091C4.046 8.589 3.639 8.18 3.1366 8.18Z" fill="currentColor"/><path d="M8.455 10.908H6.228C5.725 10.908 5.318 11.316 5.318 11.818V19.09C5.318 19.593 5.725 20 6.228 20H8.455C8.957 20 9.364 19.592 9.364 19.09V11.818C9.364 11.316 8.957 10.908 8.455 10.908Z" fill="currentColor"/><path d="M13.772 10.908H11.545C11.043 10.908 10.636 11.316 10.636 11.818V19.09C10.636 19.593 11.043 20 11.545 20H13.772C14.275 20 14.682 19.592 14.682 19.09V11.818C14.682 11.316 14.275 10.908 13.772 10.908Z" fill="currentColor"/><path d="M19.091 8.18H16.863C16.361 8.18 15.955 8.589 15.955 9.091V19.091C15.955 19.593 16.361 20 16.863 20H19.091C19.593 20 20 19.592 20 19.091V9.091C20 8.589 19.593 8.18 19.091 8.18Z" fill="currentColor"/><path d="M10.265 5.477V7.113C10.76 7.08 11.283 6.848 11.283 6.303C11.283 5.74 10.71 5.576 10.265 5.477Z" fill="currentColor"/><path d="M8.842 3.518C8.842 3.931 9.149 4.171 9.769 4.295V2.814C9.206 2.831 8.842 3.162 8.842 3.518Z" fill="currentColor"/><path d="M10 0C7.243 0 5 2.243 5 5C5 7.756 7.243 9.999 10 9.999C12.757 9.999 15 7.756 15 5C15 2.243 12.757 0 10 0ZM10.265 7.957V8.469C10.265 8.61 10.157 8.75 10.016 8.75C9.876 8.75 9.769 8.61 9.769 8.469V7.957C8.372 7.923 7.677 7.088 7.677 6.435C7.677 6.105 7.877 5.914 8.189 5.914C9.115 5.914 8.395 7.055 9.769 7.113V5.385C8.544 5.163 7.802 4.625 7.802 3.708C7.802 2.584 8.736 2.004 9.769 1.972V1.531C9.769 1.39 9.876 1.25 10.016 1.25C10.157 1.25 10.265 1.39 10.265 1.531V1.972C10.909 1.989 12.232 2.393 12.232 3.204C12.232 3.526 11.992 3.716 11.71 3.716C11.172 3.716 11.18 2.832 10.265 2.815V4.386C11.356 4.617 12.323 4.94 12.323 6.213C12.323 7.32 11.496 7.882 10.265 7.957Z" fill="currentColor"/></g><defs><clipPath id="ci1"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>
+        <span>Investments</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+        <span>Credit Cards</span>
+      </a>
+      <a href="loans.html" class="nav-link">
+        <svg viewBox="0 0 20 20" style="fill:currentColor;stroke:none"><g clip-path="url(#cl1)"><path d="M11.594 12.27C14.95 12.27 17.68 9.518 17.68 6.135C17.68 2.752 14.95 0 11.594 0C8.238 0 5.508 2.752 5.508 6.135C5.508 9.518 8.238 12.27 11.594 12.27ZM9.638 8.049C9.815 7.779 10.178 7.703 10.449 7.88C10.843 8.138 10.992 8.162 11.512 8.158C12.02 8.155 12.315 7.776 12.374 7.426C12.402 7.255 12.413 6.839 11.898 6.657C11.293 6.443 10.674 6.199 10.243 5.861C9.812 5.523 9.615 4.94 9.728 4.339C9.851 3.688 10.306 3.169 10.914 2.986V2.759C10.914 2.436 11.193 2.173 11.516 2.173C11.84 2.173 12.102 2.436 12.102 2.759V2.944C12.5 3.039 12.777 3.221 12.89 3.305C13.149 3.499 13.202 3.866 13.008 4.125C12.815 4.384 12.448 4.437 12.189 4.243C12.069 4.154 11.737 3.961 11.252 4.107C10.969 4.192 10.895 4.472 10.879 4.556C10.848 4.72 10.883 4.874 10.966 4.939C11.264 5.173 11.802 5.381 12.288 5.553C13.185 5.869 13.683 6.7 13.529 7.62C13.453 8.071 13.226 8.49 12.89 8.799C12.661 9.009 12.394 9.159 12.102 9.245V9.511C12.102 9.834 11.84 10.096 11.516 10.096C11.193 10.096 10.914 9.834 10.914 9.511V9.303C10.535 9.257 10.217 9.139 9.791 8.86C9.52 8.683 9.461 8.32 9.638 8.049Z" fill="currentColor"/><path d="M2.22 14.237H0.884C0.561 14.237 0.299 14.5 0.299 14.823V19.413C0.299 19.737 0.561 19.999 0.884 19.999H2.22V14.237Z" fill="currentColor"/><path d="M19.53 14.197C18.432 13.099 16.646 13.099 15.549 14.197L13.794 15.951L13.075 16.67C12.785 16.96 12.391 17.124 11.98 17.124H8.484C8.168 17.124 7.896 16.881 7.881 16.565C7.865 16.229 8.134 15.951 8.467 15.951H12.021C12.735 15.951 13.355 15.442 13.478 14.738C13.506 14.577 13.521 14.41 13.521 14.241C13.521 13.917 13.258 13.654 12.934 13.654H10.987C10.351 13.654 9.74 13.365 9.093 13.06C8.414 12.739 7.712 12.408 6.892 12.353C6.174 12.305 5.455 12.384 4.754 12.586C4.003 12.803 3.464 13.47 3.398 14.24C3.396 14.24 3.393 14.239 3.391 14.239V19.997L13.48 20C14.173 20 14.825 19.73 15.316 19.239L19.53 15.026C19.759 14.797 19.759 14.426 19.53 14.197Z" fill="currentColor"/></g><defs><clipPath id="cl1"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>
+        <span>Loans</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 20 20" style="fill:currentColor;stroke:none"><g clip-path="url(#cs1)"><path d="M19.828 1.0004L18.9996 0.172C18.827-0.001 18.565-0.048 18.343 0.052L13.892 2.017C13.717 2.097 13.593 2.257 13.558 2.446C13.524 2.635 13.584 2.829 13.72 2.965L17.035 6.28C17.171 6.416 17.365 6.476 17.554 6.442C17.743 6.407 17.903 6.283 17.983 6.108L19.948 1.657C20.048 1.435 20.001 1.173 19.828 1.0004Z" fill="currentColor"/><path d="M3.785 12.9L0.514 16.172C-0.171 16.857-0.171 17.972 0.514 18.657L1.343 19.486C2.028 20.171 3.143 20.171 3.829 19.486L7.1 16.215L3.785 12.9ZM3.42 17.417C3.191 17.646 2.82 17.646 2.591 17.417C2.362 17.188 2.362 16.817 2.591 16.588L4.205 14.974C4.434 14.745 4.805 14.745 5.034 14.974C5.263 15.203 5.263 15.574 5.034 15.803L3.42 17.417Z" fill="currentColor"/><path d="M9.585 13.729L6.271 10.414C5.814 9.958 5.071 9.958 4.614 10.414C4.157 10.871 4.157 11.615 4.614 12.072L7.928 15.386C8.385 15.843 9.129 15.843 9.585 15.386C10.042 14.929 10.042 14.186 9.585 13.729Z" fill="currentColor"/><path d="M15.378 6.28L13.721 4.622L9.171 9.172C8.714 8.714 7.972 8.714 7.514 9.172L7.1 9.586L10.414 12.9L10.828 12.486C11.286 12.028 11.286 11.287 10.828 10.829L15.378 6.28Z" fill="currentColor"/><path d="M18.972 13.998C18.021 13.047 16.877 12.843 15.564 13.077L12.901 10.414L12.264 11.05C12.474 11.837 12.27 12.701 11.657 13.315L11.243 13.728L13.076 15.561C12.892 16.595 12.909 17.473 13.551 18.424C14.293 19.523 15.59 20.147 16.949 19.96C17.174 19.929 17.362 19.773 17.434 19.558C17.506 19.343 17.451 19.106 17.29 18.945L16.484 18.141V16.484H18.143L18.945 17.285C19.105 17.446 19.343 17.501 19.559 17.429C19.774 17.356 19.929 17.167 19.959 16.942C20.102 15.876 19.754 14.78 18.972 13.998Z" fill="currentColor"/><path d="M6.916 4.426C7.148 3.127 6.96 1.985 5.994 1.019C5.337 0.362 4.459 0 3.52 0C3.361 0 3.205 0.01 3.051 0.031C2.825 0.061 2.637 0.216 2.564 0.432C2.491 0.647 2.546 0.885 2.707 1.046L3.516 1.847V3.516H1.851L1.048 2.701C0.887 2.541 0.65 2.485 0.435 2.558C0.22 2.63 0.064 2.818 0.033 3.043C-0.145 4.343 0.418 5.663 1.567 6.439C2.522 7.082 3.405 7.098 4.432 6.913L6.272 8.757L6.686 8.343C7.299 7.73 8.164 7.526 8.951 7.736L9.587 7.1L6.916 4.426Z" fill="currentColor"/></g><defs><clipPath id="cs1"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>
+        <span>Services</span>
+      </a>
+      <a href="#" class="nav-link">
+        <svg viewBox="0 0 20 20" style="fill:currentColor;stroke:none"><g clip-path="url(#cp1)"><path d="M3.849 13.334C4.05 13.454 4.223 13.61 4.361 13.79H6.965V11.265L5.73 10.499C5.455 10.328 5.37 9.967 5.541 9.692C5.711 9.417 6.072 9.333 6.347 9.503L7.551 10.249L8.6 9.599C6.508 6.73 6.988 2.666 9.773 0.372C5.186-1.165 0.374 2.251 0.353 7.156C0.341 9.758 1.726 12.071 3.849 13.334Z" fill="currentColor"/><path d="M4.727 14.961H10.274V16.289H4.727V14.961Z" fill="currentColor"/><path d="M8.137 11.265V13.79H10.632C10.765 13.615 10.93 13.465 11.122 13.352C11.655 13.038 12.144 12.656 12.577 12.219C11.353 11.943 10.254 11.334 9.38 10.493C9.346 10.515 9.106 10.663 8.137 11.265Z" fill="currentColor"/><path d="M14.062 0.002C10.99 0.002 8.477 2.541 8.477 5.626C8.477 8.529 10.705 10.932 13.562 11.189C16.868 11.484 19.648 8.864 19.648 5.626C19.648 2.547 17.142 0.002 14.062 0.002ZM14.649 8.166V8.288C14.649 8.612 14.387 8.874 14.063 8.874C13.739 8.874 13.477 8.612 13.477 8.288V8.232C13.207 8.185 12.961 8.084 12.649 7.88C12.378 7.703 12.302 7.34 12.479 7.069C12.657 6.798 13.02 6.722 13.29 6.899C13.576 7.086 13.669 7.101 14.059 7.098C14.436 7.096 14.586 6.8 14.615 6.625C14.642 6.469 14.612 6.261 14.322 6.158C13.835 5.986 13.337 5.789 12.983 5.511C12.179 4.88 12.421 3.439 13.477 3.055V2.97C13.477 2.647 13.739 2.385 14.063 2.385C14.387 2.385 14.649 2.647 14.649 2.97V3.003C14.938 3.084 15.17 3.232 15.33 3.394C15.557 3.625 15.554 3.996 15.323 4.223C15.092 4.449 14.722 4.446 14.495 4.216C14.462 4.184 14.282 4.034 13.891 4.151C13.735 4.198 13.693 4.36 13.684 4.409C13.665 4.51 13.692 4.578 13.706 4.589C13.927 4.763 14.339 4.921 14.712 5.053C16.257 5.599 16.068 7.653 14.649 8.166Z" fill="currentColor"/><path d="M5.665 18.164C5.665 19.177 6.488 20 7.5 20C8.513 20 9.336 19.177 9.336 18.164V17.461H5.665V18.164Z" fill="currentColor"/></g><defs><clipPath id="cp1"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>
+        <span>My Privileges</span>
+      </a>
+      <a href="settings.html" class="nav-link">
+        <svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+        <span>Setting</span>
+      </a>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- main -->
+  <div class="layout-content">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-content">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <h1 class="page-title">Overview</h1>
+        <div class="header-actions">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" placeholder="Search for something" class="search-input" />
+          </div>
+          <a href="settings.html" class="icon-btn" title="Settings">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </a>
+          <button class="icon-btn notification-bell" title="Notifications">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <span class="notification-badge"></span>
+          </button>
+          <a href="settings.html" class="profile-avatar">
+            <img src="img/profil.jpg" alt="Charlene Reed" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-area">
+      <div class="dashboard-grid">
+
+        <section class="grid-col-2">
+
+          <!-- My Cards -->
+          <div class="section-block">
+            <div class="section-header">
+              <h2>My Cards</h2>
+              <a href="#" class="link-see-all">See All</a>
+            </div>
+            <div class="cards-row">
+              <div class="bank-card primary">
+                <div class="card-top">
+                  <div>
+                    <span class="card-label">Balance</span>
+                    <span class="card-balance" data-value="5756">$5,756</span>
+                  </div>
+                  <div class="card-chip">
+                    <svg width="36" height="36" viewBox="0 0 26 26" fill="white">
+                      <path d="M5.813 2C2.647 2 0 4.648 0 7.813v10.375C0 21.352 2.648 24 5.813 24h14.375C23.352 24 26 21.352 26 18.187V7.813C26 4.649 23.352 2 20.187 2zm0 2h14.375C22.223 4 24 5.777 24 7.813V9h-6c-.555 0-1-.445-1-1s.445-1 1-1a1 1 0 1 0 0-2c-1.645 0-3 1.355-3 3c0 1.292.844 2.394 2 2.813v4.968c-1.198.814-2 2.18-2 3.719c0 .923.293 1.781.781 2.5H10.22a4.44 4.44 0 0 0 .78-2.5c0-1.538-.802-2.905-2-3.719v-4.969c1.156-.418 2-1.52 2-2.812c0-1.645-1.355-3-3-3H6a1 1 0 0 0-.094 0a1 1 0 0 0-.093 0A1.004 1.004 0 0 0 6 7h2c.555 0 1 .445 1 1s-.445 1-1 1H2V7.812C2 5.777 3.777 4 5.813 4M2 11h5v4H2zm17 0h5v4h-5zM2 17h4.5C7.839 17 9 18.161 9 19.5S7.839 22 6.5 22h-.688C3.777 22 2 20.223 2 18.187zm17.5 0H24v1.188C24 20.223 22.223 22 20.187 22H19.5c-1.339 0-2.5-1.161-2.5-2.5s1.161-2.5 2.5-2.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card-middle">
+                  <div>
+                    <span class="card-label">CARD HOLDER</span>
+                    <span class="card-value">Eddy Cusuma</span>
+                  </div>
+                  <div>
+                    <span class="card-label">VALID THRU</span>
+                    <span class="card-value">12/22</span>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <span class="card-number">3778 **** **** 1234</span>
+                  <div class="card-brand-circles"><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="bank-card secondary">
+                <div class="card-top">
+                  <div>
+                    <span class="card-label">Balance</span>
+                    <span class="card-balance" data-value="5756">$5,756</span>
+                  </div>
+                  <div class="card-chip">
+                    <svg width="36" height="36" viewBox="0 0 26 26" fill="#9D9D9D">
+                      <path d="M5.813 2C2.647 2 0 4.648 0 7.813v10.375C0 21.352 2.648 24 5.813 24h14.375C23.352 24 26 21.352 26 18.187V7.813C26 4.649 23.352 2 20.187 2zm0 2h14.375C22.223 4 24 5.777 24 7.813V9h-6c-.555 0-1-.445-1-1s.445-1 1-1a1 1 0 1 0 0-2c-1.645 0-3 1.355-3 3c0 1.292.844 2.394 2 2.813v4.968c-1.198.814-2 2.18-2 3.719c0 .923.293 1.781.781 2.5H10.22a4.44 4.44 0 0 0 .78-2.5c0-1.538-.802-2.905-2-3.719v-4.969c1.156-.418 2-1.52 2-2.812c0-1.645-1.355-3-3-3H6a1 1 0 0 0-.094 0a1 1 0 0 0-.093 0A1.004 1.004 0 0 0 6 7h2c.555 0 1 .445 1 1s-.445 1-1 1H2V7.812C2 5.777 3.777 4 5.813 4M2 11h5v4H2zm17 0h5v4h-5zM2 17h4.5C7.839 17 9 18.161 9 19.5S7.839 22 6.5 22h-.688C3.777 22 2 20.223 2 18.187zm17.5 0H24v1.188C24 20.223 22.223 22 20.187 22H19.5c-1.339 0-2.5-1.161-2.5-2.5s1.161-2.5 2.5-2.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card-middle">
+                  <div>
+                    <span class="card-label">CARD HOLDER</span>
+                    <span class="card-value">Eddy Cusuma</span>
+                  </div>
+                  <div>
+                    <span class="card-label">VALID THRU</span>
+                    <span class="card-value">12/22</span>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <span class="card-number">3778 **** **** 1234</span>
+                  <div class="card-brand-circles"><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Transactions -->
+          <div class="section-block">
+            <h2>Recent Transaction</h2>
+            <div class="transaction-list">
+              <div class="transaction-item">
+                <div class="tx-icon" style="background:#FFBB3820">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFBB38" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+                  </svg>
+                </div>
+                <div class="tx-info">
+                  <span class="tx-desc">Deposit from my Card</span>
+                  <span class="tx-date">28 January 2021</span>
+                </div>
+                <span class="tx-amount negative">-$850</span>
+              </div>
+              <div class="transaction-item">
+                <div class="tx-icon" style="background:#396AFF20">
+                  <svg width="22" height="22" viewBox="0 0 256 256" fill="#396AFF">
+                    <path d="M218.54 94.77A53.84 53.84 0 0 0 198 78.66A54 54 0 0 0 144 26H84a14 14 0 0 0-13.58 10.6l-36 144A14 14 0 0 0 48 198h30.07l-3.65 14.6A14 14 0 0 0 88 230h31.5a14 14 0 0 0 13.58-10.6l9-35.88A2 2 0 0 1 144 182h32a54 54 0 0 0 42.56-87.23ZM79.51 186H48a2 2 0 0 1-1.94-2.49l36-144A2 2 0 0 1 84 38h60a42 42 0 0 1 41.69 36.87A54.6 54.6 0 0 0 176 74h-56a14 14 0 0 0-13.59 10.6l-25 99.89a2 2 0 0 1-1.9 1.51m105.86-98.95c-.18 1-.39 2.09-.65 3.14A41.94 41.94 0 0 1 144 122h-34.56l8.62-34.48A2 2 0 0 1 120 86h56a42.4 42.4 0 0 1 9.37 1.05m31.35 51.14A41.94 41.94 0 0 1 176 170h-32a14 14 0 0 0-13.58 10.6l-9 35.89a2 2 0 0 1-1.94 1.51H88a2 2 0 0 1-1.94-2.49l20-80a2 2 0 0 1 2-1.52h36a53.92 53.92 0 0 0 52.38-40.9c.14-.55.25-1.1.36-1.64a42.06 42.06 0 0 1 20 46.73Z"/>
+                  </svg>
+                </div>
+                <div class="tx-info">
+                  <span class="tx-desc">Deposit Paypal</span>
+                  <span class="tx-date">25 January 2021</span>
+                </div>
+                <span class="tx-amount positive">+$2,500</span>
+              </div>
+              <div class="transaction-item">
+                <div class="tx-icon" style="background:#16DBCC20">
+                  <svg width="22" height="22" viewBox="0 0 48 48" fill="none" stroke="#16DBCC" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <path d="M24 3c11.598 0 21 9.402 21 21s-9.402 21-21 21S3 35.598 3 24S12.402 3 24 3"/>
+                    <path d="M24 8c8.837 0 16 7.163 16 16s-7.163 16-16 16S8 32.837 8 24S15.163 8 24 8"/>
+                    <path d="M28.5 18.949S26.7 17.57 24 17.57c-2.25 0-4.5 1.378-4.5 3.215c0 4.591 9 1.836 9 6.428c0 1.837-2.25 3.214-4.5 3.214c-2.7 0-4.5-1.377-4.5-1.377M24 17.571V15m0 18v-2.57"/>
+                  </svg>
+                </div>
+                <div class="tx-info">
+                  <span class="tx-desc">Jemi Wilson</span>
+                  <span class="tx-date">21 January 2021</span>
+                </div>
+                <span class="tx-amount positive">+$5,400</span>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="grid-col-2">
+
+          <div class="section-block chart-block">
+            <div class="chart-header">
+              <h2>Weekly Activity</h2>
+              <div class="chart-legend">
+                <div class="legend-item"><span class="legend-dot deposit"></span><span>Deposit</span></div>
+                <div class="legend-item"><span class="legend-dot withdraw"></span><span>Withdraw</span></div>
+              </div>
+            </div>
+            <div class="chart-canvas-wrapper"><canvas id="weeklyChart"></canvas></div>
+          </div>
+
+          <div class="section-block chart-block">
+            <h2>Expense Statistics</h2>
+            <div class="chart-canvas-wrapper"><canvas id="expenseChart"></canvas></div>
+          </div>
+
+        </section>
+
+        <section class="grid-col-2-rev">
+
+          <!-- Quick Transfer -->
+          <div class="section-block">
+            <h2>Quick Transfer</h2>
+            <div class="transfer-contacts">
+              <div class="contact-card selected" data-id="1">
+                <img class="contact-avatar" src="img/ceo.jpg" alt="Livia Bator" />
+                <span class="contact-name">Livia Bator</span>
+                <span class="contact-role">CEO</span>
+              </div>
+              <div class="contact-card" data-id="2">
+                <img class="contact-avatar" src="img/director.jpg" alt="Randy Press" />
+                <span class="contact-name">Randy Press</span>
+                <span class="contact-role">Director</span>
+              </div>
+              <div class="contact-card" data-id="3">
+                <img class="contact-avatar" src="img/workman.jpg" alt="Workman" />
+                <span class="contact-name">Workman</span>
+                <span class="contact-role">Designer</span>
+              </div>
+              <button class="contact-nav-btn" title="More">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </button>
+            </div>
+            <span class="transfer-form-label">Write Amount</span>
+            <div class="transfer-input-group">
+              <input type="number" placeholder="525.50" class="transfer-amount" id="transferAmount" />
+              <button class="btn-send" onclick="handleTransfer()">
+                Send
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" fill="white" stroke="none"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Balance History -->
+          <div class="section-block chart-block">
+            <h2>Balance History</h2>
+            <div class="chart-canvas-wrapper"><canvas id="balanceChart"></canvas></div>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script src="js/app.js"></script>
+<script>
+  Chart.register(ChartDataLabels);
+
+  // Weekly Activity
+  new Chart(document.getElementById('weeklyChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Sat','Sun','Mon','Tue','Wed','Thu','Fri'],
+      datasets: [
+        { label:'Deposit',  data:[250,430,320,480,280,350,200], backgroundColor:'#2D60FF', borderRadius:8, barThickness:14 },
+        { label:'Withdraw', data:[180,200,250,150,220,300,310], backgroundColor:'#16DBCC', borderRadius:8, barThickness:14 }
+      ]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, datalabels:{display:false} },
+      scales:{
+        y:{ beginAtZero:true, max:500, grid:{color:'#F0F0F5'}, ticks:{color:'#718EBF',font:{size:12}} },
+        x:{ grid:{display:false}, ticks:{color:'#718EBF',font:{size:12}} }
+      }
+    }
+  });
+
+  // Expense Statistics Pie
+  new Chart(document.getElementById('expenseChart'), {
+    type: 'pie',
+    data: {
+      labels: ['Entertainment','Bill Expense','Investment','Others'],
+      datasets: [{
+        data: [30,15,20,35],
+        backgroundColor: ['#343C6A','#FC7900','#FF82AC','#2D60FF'],
+        borderWidth: 3, borderColor:'#fff'
+      }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{ display:false },
+        datalabels:{
+          color:'white', font:{weight:'bold', size:13},
+          formatter:(v,ctx) => v+'%\n'+ctx.chart.data.labels[ctx.dataIndex],
+          textAlign:'center', anchor:'center'
+        }
+      }
+    }
+  });
+
+  // Balance History
+  new Chart(document.getElementById('balanceChart'), {
+    type: 'line',
+    data: {
+      labels: ['Jul','Aug','Sep','Oct','Nov','Dec','Jan'],
+      datasets:[{
+        data: [200,350,250,480,150,380,400],
+        borderColor:'#1814F3',
+        backgroundColor: (ctx) => {
+          const g = ctx.chart.ctx.createLinearGradient(0,0,0,220);
+          g.addColorStop(0,'rgba(24,20,243,0.25)');
+          g.addColorStop(1,'rgba(24,20,243,0.02)');
+          return g;
+        },
+        fill:true, tension:0.45, pointRadius:0, pointHoverRadius:6, borderWidth:3
+      }]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, datalabels:{display:false} },
+      scales:{
+        y:{ beginAtZero:true, max:800, grid:{color:'#F0F0F5'}, ticks:{color:'#718EBF',font:{size:12}} },
+        x:{ grid:{display:false}, ticks:{color:'#718EBF',font:{size:12}} }
+      }
+    }
+  });
+
+  // Contact selection
+  document.querySelectorAll('.contact-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.contact-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+    });
+  });
+
+  function handleTransfer() {
+    const amt = document.getElementById('transferAmount').value;
+    if (!amt || isNaN(amt) || parseFloat(amt) <= 0) {
+      alert('Please enter a valid amount');
+      return;
+    }
+    const selected = document.querySelector('.contact-card.selected .contact-name');
+    alert('Transfer of $' + parseFloat(amt).toFixed(2) + ' sent to ' + (selected?.textContent || 'recipient') + '!');
+    document.getElementById('transferAmount').value = '';
+  }
+</script>
+</body>
+</html>
